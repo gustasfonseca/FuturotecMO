@@ -1,0 +1,132 @@
+ion-content{
+  background-color: #fff;
+}
+
+ion-header {
+  ion-toolbar {
+    --min-height: 120px;
+    --background: #fff;
+    --padding-start: 25px;
+    --padding-end: 25px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.logo-img {
+  height: 80px;
+}
+
+.nav-button {
+  color: #333;
+  --background: transparent;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-right: 30px;
+  font-size: 1.1em;
+}
+
+.login-button {
+  --background: #23586a;
+  --color: #fff;
+  --border-radius: 5px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-left: 10px;
+  font-size: 1.1em;
+}
+
+.main-container {
+  padding: 40px 20px;
+  background-color: #f0f4f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-col {
+  padding: 20px;
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #333;
+    margin-bottom: 20px;
+  }
+}
+
+.start-button {
+  --background: #23586a;
+  --color: #fff;
+  --border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  height: 50px;
+  width: 180px;
+}
+
+.image-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.stats-section {
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.stat-item {
+  margin: 15px;
+  p {
+    color:#23586a;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+  .stat-icon {
+    font-size: 4rem;
+    color: #23586a;
+  }
+}
+
+.connecting-text {
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: #23586a;
+  margin: 20px 0 40px 0;
+}
+
+
+@media (max-width: 768px) {
+  ion-header {
+    ion-toolbar {
+      --min-height: 100px;
+    }
+  }
+  .logo-img {
+    height: 60px;
+  }
+  .text-col, .image-col {
+    text-align: center;
+  }
+  .start-button {
+    width: 100%;
+  }
+  .stats-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
